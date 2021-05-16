@@ -6,4 +6,4 @@ This program will decode a LogCrash file from Trackmania or Maniaplanet into a m
 * Show disassembly of ByteCode at crash location
 
 ## Download
-Use 
+Find the latest release on the [releases page](https://github.com/codecat/logcrash-decoder/releases).
