@@ -38,7 +38,7 @@ func transformLog(path string) error {
 	}
 
 	// Prepare regular expressions
-	rAddress := regexp.MustCompile(`address 0x([0-9A-F]{8,16})`)
+	rAddress := regexp.MustCompile(`[0x ]([0-9A-F]{8,16})`)
 	rOpenplanet := regexp.MustCompile(`^.*: Openplanet.dll$`)
 
 	// Go through the file line by line
