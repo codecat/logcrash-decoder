@@ -5,6 +5,7 @@ import (
 	"os"
 	"regexp"
 	"strconv"
+	"strings"
 
 	"github.com/codecat/go-libs/log"
 )
@@ -98,7 +99,7 @@ func decodeLog(path string) (*logInfo, error) {
 			}
 
 		} else {
-			if line == "--- ExceptionWin32 catched ---" {
+			if line == "--- ExceptionWin32 catched ---" || strings.HasPrefix(line, "Win32 Exception : ") {
 				inException = true
 				continue
 			}
